@@ -1,0 +1,98 @@
+:root{
+  --bg:#061826;
+  --card:#0B2436;
+  --text:#EAF2FF;
+  --muted:#B8C7E6;
+  --p:#7C3AED;
+  --g:#22C55E;
+  --radius:20px;
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;
+  background: radial-gradient(1000px 600px at 20% 0%, rgba(124,58,237,.18), transparent 60%),
+              radial-gradient(1000px 600px at 80% 10%, rgba(34,197,94,.12), transparent 60%),
+              var(--bg);
+  color:var(--text);
+}
+.wrap{max-width:980px;margin:0 auto;padding:22px}
+.top h1{margin:0 0 14px;font-size:2rem}
+.intro{color:var(--muted);font-size:1.03rem}
+.promo{color:var(--g);font-weight:900;text-decoration:none}
+.promo:hover{text-decoration:underline}
+
+.tocBar{
+  margin:12px 0 16px;
+  padding:10px 12px;
+  border-radius:999px;
+  border:1px solid rgba(255,255,255,.10);
+  background:rgba(0,0,0,.20);
+  display:flex;
+  gap:12px;
+  align-items:center;
+}
+.tocLabel{font-weight:900;color:#fff;white-space:nowrap}
+.tocScroll{
+  display:flex;gap:10px;overflow:auto;scrollbar-width:none;
+}
+.tocScroll::-webkit-scrollbar{display:none}
+.tocScroll a{
+  white-space:nowrap;
+  padding:8px 12px;
+  border-radius:999px;
+  text-decoration:none;
+  color:var(--text);
+  border:1px solid rgba(255,255,255,.08);
+  background:rgba(255,255,255,.03);
+}
+.tocScroll a:hover{border-color: rgba(124,58,237,.35); color:var(--p)}
+
+.card{
+  margin-top:14px;
+  padding:18px;
+  border-radius:var(--radius);
+  background:rgba(255,255,255,.03);
+  border:1px solid rgba(255,255,255,.08);
+}
+h2{margin:0 0 10px}
+.note{
+  margin-top:10px;
+  padding:12px 14px;
+  border-radius:16px;
+  border:1px solid rgba(34,197,94,.30);
+  background:rgba(34,197,94,.08);
+}
+.two{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
+.pill{
+  padding:10px 12px;border-radius:999px;
+  border:1px solid rgba(255,255,255,.10);
+  background:rgba(0,0,0,.20);
+}
+.warn li{margin:8px 0;color:#ffd6ff}
+
+.relatedLinks{display:flex;gap:10px;flex-wrap:wrap}
+.relatedLinks a{
+  padding:8px 12px;border-radius:999px;
+  border:1px solid rgba(255,255,255,.10);
+  color:var(--text);text-decoration:none
+}
+.relatedLinks a:hover{border-color: rgba(34,197,94,.35); color:var(--g)}
+
+.faq details{
+  margin:10px 0;
+  padding:12px;border-radius:16px;
+  border:1px solid rgba(255,255,255,.10);
+  background:rgba(0,0,0,.18);
+}
+.faq summary{cursor:pointer;font-weight:900}
+
+.footer{
+  margin-top:18px;
+  padding-top:14px;
+  border-top:1px solid rgba(255,255,255,.08);
+  display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;
+}
+.disc{color:var(--muted)}
